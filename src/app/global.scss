@@ -12,21 +12,26 @@
   --grey-d4: #d4d4d4;
   --black-t25: rgba(0, 0, 0, 0.25);
   --white-t01: rgba(255, 255, 255, 0.01);
+  --white-t05: rgba(255, 255, 255, 0.5);
   --red-ff: #ff2f54;
   --white: #fff;
+  --grey-7a: #7a818b;
 
   //fonts
   --fs-24-32: 24px;
   --fs-10-12: 10px;
+  --fs-14-16: 14px;
 
   @media screen and (min-width: 375px) {
     --fs-24-32: calc(24px + 8 * ((100vw - 375px) / 1065));
     --fs-10-12: calc(10 + 2 * ((100vw - 375px) / 1065));
+    --fs-14-16: calc(14 + 2 * ((100vw - 375px) / 1065));
   }
 
   @media screen and (min-width: 1440px) {
     --fs-24-32: 32px;
     --fs-10-12: 12px;
+    --fs-14-16: 16px;
   }
 }
 
@@ -34,9 +39,15 @@ html {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
+  width: 100%;
 }
 
 body {
-  background-color: var(--grey-d4);
+  position: relative;
+}
+
+.max-width {
+  max-width: 81.25rem;
+  margin: 0 auto;
 }

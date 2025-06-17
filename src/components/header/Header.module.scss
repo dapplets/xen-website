@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem 0 0;
+}
+
+.logo {
+  padding: 1.375rem 0;
+}
+
+.nav {
+  display: flex;
+  padding: 1.375rem 2.5rem;
+  gap: 3rem;
+  background-color: var(--white-t05);
+  z-index: 1;
+  border-radius: 1.25rem;
+}
+
+.navItem {
+  color: var(--grey-7a);
+  font-size: var(--fs-14-16);
+  line-height: 1.5;
+}
+
+.qr {
+}
