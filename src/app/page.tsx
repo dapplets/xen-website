@@ -11,6 +11,8 @@ import cn from 'classnames'
 import Image from 'next/image'
 import gradientLeft from '../../public/img/gradient-left.png'
 import gradientRight from '../../public/img/gradient-right.png'
+import gradientBottom from '../../public/img/gradient-bottom.png'
+import Circles from '../../public/img/circles.svg'
 
 export default function Home() {
   return (
@@ -33,10 +35,16 @@ export default function Home() {
       <div className={cn(styles.bg, styles['bg--white'])}>
         <Community />
         <Supported />
+        <Circles className={cn(styles.bgImg, styles['bgImg--medium'])} />
       </div>
       <div className={cn(styles.bg, styles['bg--color'])}>
         <Products />
         <Contacts />
+        <Image
+          className={cn(styles.bgImg, styles['bgImg--bottom'])}
+          src={gradientBottom}
+          alt={'gradient'}
+        />
       </div>
     </main>
   )

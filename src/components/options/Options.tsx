@@ -9,8 +9,8 @@ const Options = () => {
       <ul className={styles.list}>
         {optionsPromo.map((feature) => (
           <li className={styles.item} key={feature.text}>
+            <feature.icon className={styles.icon} />
             <p className={styles.itemTitle}>{feature.text}</p>
-            <feature.icon />
           </li>
         ))}
       </ul>

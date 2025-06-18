@@ -1,6 +1,5 @@
 .main {
   margin: 0 auto;
-  // overflow: hidden;
 }
 
 .bg {
@@ -31,5 +30,9 @@
 
   &--right {
     right: 0;
+  }
+
+  &--bottom {
+    bottom: 0;
   }
 }

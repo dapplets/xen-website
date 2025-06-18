@@ -7,6 +7,21 @@ import OptionIcon3 from '../public/img/sync.svg'
 import Tg from '../public/img/tg.svg'
 import Web from '../public/img/web.svg'
 import App from '../public/img/ai-line.svg'
+import Near from '../public/img/near.svg'
+import Proximity from '../public/img/proximity.svg'
+import Swarm from '../public/img/swarm.svg'
+import Bos from '../public/img/bos-hacks.svg'
+import Web3 from '../public/img/web3-hack.svg'
+import Encode from '../public/img/encode.svg'
+import OneTrillion from '../public/img/one-trillion.svg'
+import Redacted from '../public/img/redacted.svg'
+import GitDark from '../public/img/github-dark.svg'
+import DiscordDark from '../public/img/discord.svg'
+import TgDark from '../public/img/tg-dark.svg'
+import MediumDark from '../public/img/medium.svg'
+import XDark from '../public/img/x.svg'
+import FacebookDark from '../public/img/facebook.svg'
+import EmailDark from '../public/img/email.svg'
 
 // todo: need links
 export const navHeader = [
@@ -94,4 +109,26 @@ export const availableisItems = [
     linkText: 'Join the waitlist',
     link: '/',
   },
+]
+
+export const supported = [
+  { icon: Near, id: 'Near' },
+  { icon: Proximity, id: 'Proximity' },
+  { icon: Swarm, id: 'Swarm' },
+  { icon: Bos, id: 'Bos' },
+  { icon: Web3, id: 'Web3' },
+  { icon: Encode, id: 'Encode' },
+  { icon: OneTrillion, id: 'OneTrillion' },
+  { icon: Redacted, id: 'Redacted' },
+]
+
+// todo: need link
+export const contacts = [
+  { icon: GitDark, id: 'GitDark', link: '' },
+  { icon: DiscordDark, id: 'DiscordDark', link: '' },
+  { icon: TgDark, id: TgDark, link: '' },
+  { icon: MediumDark, id: 'MediumDark', link: '' },
+  { icon: XDark, id: 'XDark', link: '' },
+  { icon: FacebookDark, id: 'FacebookDark', link: '' },
+  { icon: EmailDark, id: 'EmailDark', link: '' },
 ]
