@@ -36,28 +36,44 @@
 
 :root {
   --grey-d4: #d4d4d4;
-  --black-t25: rgba(0, 0, 0, 0.25);
-  --white-t01: rgba(255, 255, 255, 0.01);
-  --white-t05: rgba(255, 255, 255, 0.5);
-  --red-ff: #ff2f54;
+
   --white: #fff;
+  --white-t05: rgba(255, 255, 255, 0.5);
   --grey-7a: #7a818b;
+  --violet-79: #7958ff;
+  --black-02: #02193a;
+  --green-00: #00a666;
+  --blue-38: #384bff;
 
   //fonts
-  --fs-24-32: 24px;
-  --fs-10-12: 10px;
+  --fs-72-32: 32px;
+  --fs-40-24: 24px;
+  --fs-24-18: 18px;
+  --fs-18-16: 16px;
+  --fs-22-18: 18px;
+  --fs-14-12: 10px;
   --fs-14-16: 14px;
 
   @media screen and (min-width: 375px) {
-    --fs-24-32: calc(24px + 8 * ((100vw - 375px) / 1065));
-    --fs-10-12: calc(10 + 2 * ((100vw - 375px) / 1065));
-    --fs-14-16: calc(14 + 2 * ((100vw - 375px) / 1065));
+    --fs-72-32: calc(32px + 40 * ((100vw - 375px) / 1065));
+    --fs-18-16: calc(16px + 2 * ((100vw - 375px) / 1065));
+    --fs-22-18: calc(18px + 4 * ((100vw - 375px) / 1065));
+    --fs-40-24: calc(24px + 16 * ((100vw - 375px) / 1065));
+    --fs-24-18: calc(18px + 6 * ((100vw - 375px) / 1065));
+    // --fs-24-32: calc(24px + 8 * ((100vw - 375px) / 1065));
+    --fs-14-12: calc(12px + 2 * ((100vw - 375px) / 1065));
+    --fs-14-16: calc(14px + 2 * ((100vw - 375px) / 1065));
   }
 
   @media screen and (min-width: 1440px) {
-    --fs-24-32: 32px;
-    --fs-10-12: 12px;
+    --fs-72-32: 72px;
+    --fs-18-16: 16px;
+    --fs-22-18: 22px;
+    --fs-40-24: 40px;
+    --fs-14-12: 14px;
     --fs-14-16: 16px;
+    --fs-24-18: 24px;
+    // --fs-10-12: 12px;
   }
 }
 
@@ -67,6 +83,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   font-family: Roboto, 'Roboto', sans-serif;
   width: 100%;
+  color: var(--black-02);
 }
 
 body {
@@ -80,4 +97,15 @@ body {
 
 .consolas {
   font-family: Consolas, 'Consolas', sans-serif;
+}
+
+.title-hilight {
+  background-color: var(--white);
+  padding: 0 0.4375rem;
+  border-radius: 0.4375rem;
+  font-size: var(--fs-40-24);
+  font-family: Consolas, 'Consolas', sans-serif;
+  line-height: 1;
+  width: fit-content;
+  font-weight: 400;
 }

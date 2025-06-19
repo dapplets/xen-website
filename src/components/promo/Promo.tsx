@@ -9,15 +9,17 @@ const road = ['local', 'convenient', 'fast']
 
 const Promo: FC = () => {
   return (
-    <section className={styles.wrapper}>
+    <section className={cn('max-width', styles.wrapper)}>
       <div className={styles.top}>
         <div className={cn(styles.titleBlock)}>
           <h1 className={cn(styles.title)}>
-            Powerful personal{' '}
+            Powerful
+            <br />{' '}
             <span className={cn(styles.title, styles['title--hilight'])}>
-              ai assistant
-            </span>{' '}
-            in your pocket
+              personal ai
+            </span>
+            <br />
+            assistant in <br /> your pocket
           </h1>
           <a
             className={styles.link}
@@ -56,7 +58,9 @@ const Promo: FC = () => {
                     <Image src={opt.img} alt={opt.text} />
                   </figure>
                   <span className={styles.itemText}>{opt.text}</span>
-                  <span className={styles.itemLabel}>{opt.label}</span>
+                  <span className={cn('consolas', styles.itemLabel)}>
+                    {opt.label}
+                  </span>
                 </li>
               ))}
             </ul>

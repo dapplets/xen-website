@@ -4,10 +4,12 @@ import { featuresPromo } from '@/constants'
 
 const Features = () => {
   return (
-    <section className={styles.wrapper}>
-      <h2 className={styles.title}>
+    <section className={cn('max-width', styles.wrapper)}>
+      <h2 className={cn('title-hilight', styles.title)}>
         Privacy isn&rsquo;t a&nbsp;feature.
-        <br />
+      </h2>
+      <h2 className={cn('title-hilight', styles.title)}>
+        {' '}
         It&rsquo;s the foundation.
       </h2>
       <ul className={styles.list}>

@@ -4,8 +4,10 @@ import { availableisItems } from '@/constants'
 
 const Products = () => {
   return (
-    <section className={styles.wrapper}>
-      <h2 className={styles.title}>Available Everywhere</h2>
+    <section className={cn('max-width', styles.wrapper)}>
+      <h2 className={cn('title-hilight', styles.title)}>
+        Available Everywhere
+      </h2>
       <ul className={styles.list}>
         {availableisItems.map((feature) => (
           <li className={styles.item} key={feature.title}>

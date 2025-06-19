@@ -37,7 +37,7 @@ export default function Home() {
         <Supported />
         <Circles className={cn(styles.bgImg, styles['bgImg--medium'])} />
       </div>
-      <div className={cn(styles.bg, styles['bg--color'])}>
+      <div className={cn(styles.bg, styles['bg--color'], styles['bg--bottom'])}>
         <Products />
         <Contacts />
         <Image

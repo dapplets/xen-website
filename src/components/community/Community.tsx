@@ -4,8 +4,8 @@ import { communityItems } from '@/constants'
 
 const Community = () => {
   return (
-    <section className={styles.wrapper}>
-      <h2 className={styles.title}>
+    <section className={cn('max-width', styles.wrapper)}>
+      <h2 className={cn('consolas', styles.title)}>
         Built by&nbsp;the Community,
         <br />
         for the Community

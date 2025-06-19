@@ -1,0 +1,44 @@
+.wrapper {
+}
+
+.title {
+  font-size: var(--fs-40-24);
+  line-height: 1;
+  font-weight: 400;
+  text-align: center;
+}
+
+.text {
+  margin: 2.5rem auto 0;
+  font-size: var(--fs-14-16);
+  line-height: 1.49;
+  text-align: center;
+  color: var(--grey-7a);
+  max-width: 51.9em;
+}
+
+.list {
+  margin-top: 3.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.item {
+  color: var(--grey-7a);
+  max-width: 51.9em;
+}
+
+.itemTitle {
+  text-align: center;
+  font-weight: 400;
+  font-size: var(--fs-24-18);
+  line-height: 1.49;
+}
+
+.itemText {
+  text-align: center;
+  font-size: var(--fs-14-16);
+  line-height: 1.49;
+}

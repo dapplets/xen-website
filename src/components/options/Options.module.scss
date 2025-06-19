@@ -1,4 +1,5 @@
 .wrapper {
+  margin-top: 3.125rem;
 }
 
 .title {
@@ -6,13 +7,26 @@
 
 .list {
   display: flex;
+  margin-top: 1.25rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
 }
 
 .item {
+  width: calc(30% - 0.875rem);
   display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.25rem 0.625rem;
+  border-radius: 0.625rem;
+  background-color: var(--white-t05);
+  color: var(--grey-7a);
 }
 
 .itemTitle {
+  font-size: var(--fs-14-16);
+  line-height: 1.49;
 }
 
 .icon {

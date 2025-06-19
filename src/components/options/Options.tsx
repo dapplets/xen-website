@@ -4,8 +4,10 @@ import { optionsPromo } from '@/constants'
 
 const Options = () => {
   return (
-    <section className={styles.wrapper}>
-      <h2 className={styles.title}>Local-First, Cloud-Optional</h2>
+    <section className={cn('max-width', styles.wrapper)}>
+      <h2 className={cn('title-hilight', styles.title)}>
+        Local-First, Cloud-Optional
+      </h2>
       <ul className={styles.list}>
         {optionsPromo.map((feature) => (
           <li className={styles.item} key={feature.text}>
