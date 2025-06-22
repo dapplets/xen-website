@@ -1,6 +1,7 @@
 import cn from 'classnames'
 import styles from './Products.module.scss'
 import { availableisItems } from '@/constants'
+import ArrowIcon from '../../../public/img/arrow.svg'
 
 const Products = () => {
   return (
@@ -9,7 +10,7 @@ const Products = () => {
         Available Everywhere
       </h2>
       <ul className={styles.list}>
-        {availableisItems.map((feature) => (
+        {availableisItems.map((feature, i) => (
           <li className={styles.item} key={feature.title}>
             <div className={styles.top}>
               <figure className={styles.icon}>
@@ -19,6 +20,9 @@ const Products = () => {
                 <h3 className={styles.itemTitle}> {feature.title}</h3>
                 <span className={styles.itemSubtitle}> {feature.subtitle}</span>
               </div>
+              {(i === 0 || i == 1) && (
+                <ArrowIcon className={styles.iconArrow} />
+              )}
             </div>
             <p className={styles.text}>{feature.text}</p>
             <a

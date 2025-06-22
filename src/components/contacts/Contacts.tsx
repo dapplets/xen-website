@@ -6,8 +6,10 @@ import BgIcon from '../../../public/img/lines-circles-stars.svg'
 
 const Contacts = () => {
   return (
-    <section className={styles.wrapper}>
-      <h2 className={styles.title}>Maintained by&nbsp;the Community</h2>
+    <section className={cn('max-width', styles.wrapper)}>
+      <h2 className={cn('consolas', styles.title)}>
+        Maintained by&nbsp;the Community
+      </h2>
       <p className={styles.text}>
         Xen is&nbsp;not just a&nbsp;product&nbsp;&mdash; it&rsquo;s
         a&nbsp;movement. Built and shaped by&nbsp;people like you: developers,

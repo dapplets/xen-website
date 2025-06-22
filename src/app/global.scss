@@ -48,21 +48,24 @@
   //fonts
   --fs-72-32: 32px;
   --fs-40-24: 24px;
+  --fs-30-24: 24px;
   --fs-24-18: 18px;
   --fs-18-16: 16px;
   --fs-22-18: 18px;
-  --fs-14-12: 10px;
+  --fs-14-12: 12px;
   --fs-14-16: 14px;
+  --fs-12-10: 10px;
 
   @media screen and (min-width: 375px) {
     --fs-72-32: calc(32px + 40 * ((100vw - 375px) / 1065));
     --fs-18-16: calc(16px + 2 * ((100vw - 375px) / 1065));
     --fs-22-18: calc(18px + 4 * ((100vw - 375px) / 1065));
     --fs-40-24: calc(24px + 16 * ((100vw - 375px) / 1065));
+    --fs-30-24: calc(24px + 6 * ((100vw - 375px) / 1065));
     --fs-24-18: calc(18px + 6 * ((100vw - 375px) / 1065));
-    // --fs-24-32: calc(24px + 8 * ((100vw - 375px) / 1065));
     --fs-14-12: calc(12px + 2 * ((100vw - 375px) / 1065));
     --fs-14-16: calc(14px + 2 * ((100vw - 375px) / 1065));
+    --fs-12-10: calc(10px + 2 * ((100vw - 375px) / 1065));
   }
 
   @media screen and (min-width: 1440px) {
@@ -70,10 +73,11 @@
     --fs-18-16: 16px;
     --fs-22-18: 22px;
     --fs-40-24: 40px;
+    --fs-30-24: 30px;
     --fs-14-12: 14px;
     --fs-14-16: 16px;
     --fs-24-18: 24px;
-    // --fs-10-12: 12px;
+    --fs-12-10: 12px;
   }
 }
 
@@ -91,7 +95,7 @@ body {
 }
 
 .max-width {
-  max-width: 81.25rem;
+  max-width: 83.75rem;
   margin: 0 auto;
 }
 

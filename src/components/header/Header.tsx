@@ -16,7 +16,7 @@ const Header: FC<{
   setMenuOpen: React.Dispatch<React.SetStateAction<boolean>>
 }) => {
   return (
-    <header className={cn(styles.wrapper, 'max-width')}>
+    <header className={cn('max-width', styles.wrapper)}>
       <LogoIcon className={styles.logo} />
       <nav className={styles.nav}>
         {navHeader.map((nav) => (

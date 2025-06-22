@@ -4,6 +4,7 @@
 
 .bg {
   position: relative;
+  padding: 0 1.25rem;
 
   &--bottom {
   }
@@ -26,26 +27,10 @@
   width: 100%;
   pointer-events: none;
   z-index: -1;
-
-  &--left,
-  &--right {
-    top: -20%;
-  }
-
-  &--left {
-    left: 0;
-  }
-
-  &--right {
-    right: 0;
-  }
-
-  &--bottom {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
+  top: -24.625rem;
+  left: 0;
+  right: 0;
+  z-index: -1;
 
   &--medium {
     z-index: 1;
@@ -55,3 +40,21 @@
     right: 0;
   }
 }
+
+@media (max-width: 72.375rem) and (min-width: 62.5rem) {
+  .bgImg {
+    top: -22rem;
+  }
+}
+
+@media (max-width: 62.5rem) {
+  .bgImg {
+    top: -15rem;
+  }
+}
+
+// @media (max-width: 87.5rem) {
+//   .text {
+//     max-width: 50%;
+//   }
+// }

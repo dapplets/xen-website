@@ -5,7 +5,7 @@ import { navHeader } from '@/constants'
 
 const Footer = () => {
   return (
-    <footer className={styles.wrapper}>
+    <footer className={cn('max-width', styles.wrapper)}>
       <Logo className={styles.logo} />
       <div className={styles.bottom}>
         <p className={styles.text}>

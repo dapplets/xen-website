@@ -8,7 +8,7 @@
 .list {
   display: flex;
   margin-top: 1.25rem;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
   gap: 1.25rem;
 }
@@ -26,24 +26,53 @@
 
 .top {
   display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  flex-grow: 0;
 }
 
 .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 2.25rem;
+  height: 2.25rem;
+  background-color: var(--violet-79);
+  padding: 0;
+  margin: 0;
+  flex-shrink: 0;
 }
 
 .titleBlock {
+  flex-grow: 1;
 }
 
 .itemTitle {
+  font-size: var(--fs-18-16);
+  color: var(--black-02);
 }
 
 .itemSubtitle {
+  font-size: var(--fs-12-10);
+  color: var(--grey-7a);
+  line-height: 1;
+}
+
+.iconArrow {
+  margin-left: auto;
 }
 
 .text {
+  color: var(--grey-7a);
+  font-size: var(--fs-14-16);
+  white-space: break-spaces;
+  flex-grow: 1;
 }
 
 .link {
   color: var(--blue-38);
   text-decoration: underline;
+  margin-top: auto;
+  align-self: flex-start;
 }

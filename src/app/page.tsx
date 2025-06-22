@@ -9,8 +9,7 @@ import Products from '@/components/products/Products'
 import Contacts from '@/components/contacts/Contacts'
 import cn from 'classnames'
 import Image from 'next/image'
-import gradientLeft from '../../public/img/gradient-left.png'
-import gradientRight from '../../public/img/gradient-right.png'
+
 import gradientBottom from '../../public/img/gradient-bottom.png'
 import Circles from '../../public/img/circles.svg'
 
@@ -22,13 +21,8 @@ export default function Home() {
         <Features />
         <Options />
         <Image
-          className={cn(styles.bgImg, styles['bgImg--left'])}
-          src={gradientLeft}
-          alt={'gradient'}
-        />
-        <Image
-          className={cn(styles.bgImg, styles['bgImg--right'])}
-          src={gradientRight}
+          className={cn(styles.bgImg, styles['bgImg--bottom'])}
+          src={gradientBottom}
           alt={'gradient'}
         />
       </div>
@@ -40,11 +34,6 @@ export default function Home() {
       <div className={cn(styles.bg, styles['bg--color'], styles['bg--bottom'])}>
         <Products />
         <Contacts />
-        <Image
-          className={cn(styles.bgImg, styles['bgImg--bottom'])}
-          src={gradientBottom}
-          alt={'gradient'}
-        />
       </div>
     </main>
   )
