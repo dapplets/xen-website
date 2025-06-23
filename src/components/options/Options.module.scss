@@ -1,5 +1,6 @@
 .wrapper {
   margin-top: 3.125rem;
+  padding: 0 1.25rem;
 }
 
 .title {
@@ -30,4 +31,14 @@
 }
 
 .icon {
+}
+
+@media (max-width: 56.25rem) {
+  .list {
+    flex-direction: column;
+  }
+
+  .item {
+    width: 100%;
+  }
 }

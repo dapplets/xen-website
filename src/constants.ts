@@ -29,7 +29,6 @@ export const navHeader = [
   { linkText: 'Agents', link: '/' },
   { linkText: 'Community', link: '/' },
   { linkText: 'Github', link: '/' },
-  { linkText: 'About uWeb', link: '/' },
 ]
 
 export const featuresPromo = [

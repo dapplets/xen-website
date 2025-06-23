@@ -34,4 +34,20 @@
   color: var(--grey-7a);
   font-size: var(--fs-14-16);
   line-height: 1.5;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: var(--violet-79);
+  }
+}
+
+@media (max-width: 56.25rem) {
+  .bottom {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .text {
+    max-width: none;
+  }
 }

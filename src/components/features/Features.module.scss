@@ -1,5 +1,6 @@
 .wrapper {
   margin-top: 3.125rem;
+  padding: 0 1.25rem;
 }
 
 .title {
@@ -32,4 +33,14 @@
 .itemText {
   font-size: var(--fs-14-16);
   line-height: 1.49;
+}
+
+@media (max-width: 56.25rem) {
+  .list {
+    flex-direction: column;
+  }
+
+  .item {
+    width: 100%;
+  }
 }

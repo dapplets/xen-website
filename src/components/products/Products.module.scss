@@ -1,5 +1,6 @@
 .wrapper {
   margin-top: 3.75rem;
+  padding: 0 1.25rem;
 }
 
 .title {
@@ -75,4 +76,14 @@
   text-decoration: underline;
   margin-top: auto;
   align-self: flex-start;
+}
+
+@media (max-width: 56.25rem) {
+  .list {
+    flex-direction: column;
+  }
+
+  .item {
+    width: 100%;
+  }
 }

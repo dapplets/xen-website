@@ -43,6 +43,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.2s ease;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .icon {
@@ -60,5 +65,15 @@
 @media (max-width: 87.5rem) {
   .text {
     max-width: 50%;
+  }
+}
+
+@media (max-width: 56.25rem) {
+  .bgImg {
+    display: none;
+  }
+
+  .text {
+    max-width: none;
   }
 }

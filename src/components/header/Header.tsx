@@ -2,8 +2,11 @@ import cn from 'classnames'
 import styles from './Header.module.scss'
 import React, { Dispatch, FC, SetStateAction } from 'react'
 import LogoIcon from '../../../public/img/logo.svg'
+import Logo from '../../../public/img/logo-icon.svg'
 import { navHeader } from '@/constants'
 import QRGenerator from '@/utils/qrGenerator'
+import BurgerIcon from '../../../public/img/burger.svg'
+import HeaderMobile from '../headerMobile/HeaderMobile'
 
 const Header: FC<{
   isMenuOpen: boolean
@@ -17,7 +20,10 @@ const Header: FC<{
 }) => {
   return (
     <header className={cn('max-width', styles.wrapper)}>
-      <LogoIcon className={styles.logo} />
+      <div className={styles.logoBlock}>
+        <Logo /> <LogoIcon className={styles.logo} />
+      </div>
+
       <nav className={styles.nav}>
         {navHeader.map((nav) => (
           <a
@@ -35,6 +41,20 @@ const Header: FC<{
         {/* todo: need link */}
         <QRGenerator url={'/'} />
       </div>
+
+      <button
+        className={styles.burger}
+        onClick={() => setMenuOpen(!isMenuOpen)}
+        type="button"
+      >
+        <BurgerIcon />
+      </button>
+      {isMenuOpen && (
+        <HeaderMobile
+          isMenuOpen={isMenuOpen}
+          setMenuOpen={() => setMenuOpen(!isMenuOpen)}
+        />
+      )}
     </header>
   )
 }

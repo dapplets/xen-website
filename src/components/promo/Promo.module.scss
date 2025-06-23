@@ -1,5 +1,6 @@
 .wrapper {
   margin-top: 2.9375rem;
+  padding: 0 1.25rem;
 }
 
 .top {
@@ -194,5 +195,18 @@
 @media (max-width: 56.25rem) {
   .options {
     flex-wrap: wrap;
+  }
+
+  .top {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .titleBlock {
+    margin-left: auto;
+  }
+
+  .content {
+    max-width: none;
   }
 }
