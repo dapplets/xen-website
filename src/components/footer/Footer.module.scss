@@ -1,12 +1,12 @@
 .wrapper {
-  margin: 3.75rem 1.25rem 3.125rem 1.25rem;
+  margin: 3.75rem 1.25rem 3.125rem 1.25rem !important;
   border-radius: 2.5rem;
   background-color: var(--white-t05);
   padding: 2.5rem;
   position: relative;
   left: calc(50% + 1.25rem);
   transform: translate3d(calc(-50% - 2.5rem), 0, 0);
-  max-width: 81.25rem;
+  max-width: 81.25rem !important;
 }
 
 .logo {

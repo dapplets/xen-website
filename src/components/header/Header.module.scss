@@ -25,6 +25,15 @@
   color: var(--grey-7a);
   font-size: var(--fs-14-16);
   line-height: 1.5;
+  transition: all 0.2s ease;
+
+  &:first-of-type {
+    color: var(--violet-79);
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .burger {

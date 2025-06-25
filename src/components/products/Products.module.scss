@@ -76,6 +76,11 @@
   text-decoration: underline;
   margin-top: auto;
   align-self: flex-start;
+  transition: all 0.2s ease;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 @media (max-width: 56.25rem) {

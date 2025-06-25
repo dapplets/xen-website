@@ -21,6 +21,7 @@ const Contacts = () => {
         {contacts.map((item) => (
           <li className={styles.item} key={item.id}>
             <a
+              title={item.id === 'XDark' ? 'coming soon' : ''}
               className={styles.link}
               href={item.link}
               target="_blank"

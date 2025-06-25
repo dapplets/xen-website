@@ -14,11 +14,11 @@ const Footer = () => {
           et&nbsp;porta.
         </p>
         <nav className={styles.nav}>
-          {navHeader.map((nav) => (
+          {navHeader.map((nav, i) => (
             <a
               className={styles.navItem}
               href={nav.link}
-              target="_blank"
+              target={i === 0 ? '_self' : '_blank'}
               key={nav.linkText}
             >
               {nav.linkText}

@@ -25,10 +25,10 @@ import EmailDark from '../public/img/email.svg'
 
 // todo: need links
 export const navHeader = [
-  { linkText: 'Home', link: '/' },
-  { linkText: 'Agents', link: '/' },
-  { linkText: 'Community', link: '/' },
-  { linkText: 'Github', link: '/' },
+  { linkText: 'Home', link: './' },
+  { linkText: 'Agents', link: 'https://app.near.ai/' },
+  { linkText: 'Community', link: 'https://t.me/nearaialpha' },
+  { linkText: 'Github', link: 'http://github.com/dapplets' },
 ]
 
 export const featuresPromo = [
@@ -90,7 +90,7 @@ export const availableisItems = [
     subtitle: 'lightweight \u0026\u00A0portable',
     text: 'Bring Xen into your pocket.\n With our Telegram integration, you can chat with your\u00A0AI assistant on\u00A0the\u00A0go, in\u00A0private and with full access to\u00A0all your configured tools and memories. It\u2019s perfect for quick interactions, real-time help, and discreet automation wherever you are.',
     linkText: 'Launch on\u00A0Telegram',
-    link: '/',
+    link: 'https://t.me/yourxenbot',
   },
   {
     icon: Web,
@@ -98,7 +98,7 @@ export const availableisItems = [
     subtitle: 'for chromium-based browsers',
     text: 'Xen lives inside your browser.\n From analyzing pages in\u00A0real-time to\u00A0modifying web content with smart overlays, Xen enhances your browsing with intelligence and context. Whether you\u2019re researching, fact-checking, or\u00A0automating workflows\u00A0\u2014 Xen acts as\u00A0a\u00A0co-pilot in\u00A0your digital space.',
     linkText: 'Chrome Web Store',
-    link: '/',
+    link: 'https://chromewebstore.google.com/detail/cnahdmdbhkphpbpbjjbfdnmbphbenglc',
   },
   {
     icon: App,
@@ -123,11 +123,11 @@ export const supported = [
 
 // todo: need link
 export const contacts = [
-  { icon: GitDark, id: 'GitDark', link: '' },
-  { icon: DiscordDark, id: 'DiscordDark', link: '' },
-  { icon: TgDark, id: TgDark, link: '' },
-  { icon: MediumDark, id: 'MediumDark', link: '' },
-  { icon: XDark, id: 'XDark', link: '' },
-  { icon: FacebookDark, id: 'FacebookDark', link: '' },
-  { icon: EmailDark, id: 'EmailDark', link: '' },
+  { icon: GitDark, id: 'GitDark', link: 'https://github.com/dapplets' },
+  { icon: DiscordDark, id: 'DiscordDark', link: 'https://discord.gg/KBB8AKTd' },
+  { icon: TgDark, id: TgDark, link: 't.me/dapplets' },
+  { icon: MediumDark, id: 'MediumDark', link: 'https://blog.dapplets.org' },
+  { icon: XDark, id: 'XDark', link: '/' },
+  // { icon: FacebookDark, id: 'FacebookDark', link: '' },
+  { icon: EmailDark, id: 'EmailDark', link: 'info@dapplets.org' },
 ]

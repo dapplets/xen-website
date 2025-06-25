@@ -23,7 +23,7 @@ const Promo: FC = () => {
           </h1>
           <a
             className={styles.link}
-            href="http://"
+            href="http://github.com/dapplets"
             target="_blank"
             rel="noopener noreferrer"
           >
