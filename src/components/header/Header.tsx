@@ -7,6 +7,7 @@ import { navHeader } from '@/constants'
 import QRGenerator from '@/utils/qrGenerator'
 import BurgerIcon from '../../../public/img/burger.svg'
 import HeaderMobile from '../headerMobile/HeaderMobile'
+import Link from 'next/link'
 
 const Header: FC<{
   isMenuOpen: boolean
@@ -20,9 +21,9 @@ const Header: FC<{
 }) => {
   return (
     <header className={cn('max-width', styles.wrapper)}>
-      <div className={styles.logoBlock}>
+      <Link href="/" className={styles.logoBlock}>
         <Logo /> <LogoIcon className={styles.logo} />
-      </div>
+      </Link>
 
       <nav className={styles.nav}>
         {navHeader.map((nav, i) => (

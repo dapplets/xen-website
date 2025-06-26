@@ -2,15 +2,14 @@
   margin: 0 auto;
 }
 
+.bodyBg {
+  position: relative;
+  padding-bottom: 3.125rem;
+}
+
 .bg {
   position: relative;
   padding: 0 1.25rem;
-
-  &--bottom {
-  }
-
-  &--color {
-  }
 
   &--white {
     background-color: var(--white);
@@ -27,7 +26,6 @@
   width: 100%;
   pointer-events: none;
   z-index: -1;
-  top: -24.625rem;
   left: 0;
   right: 0;
   z-index: -1;
@@ -39,29 +37,12 @@
     bottom: 0;
     right: 0;
   }
-}
 
-@media (max-width: 72.375rem) and (min-width: 62.5rem) {
-  .bgImg {
-    top: -22rem;
+  &--top {
+    top: -24.625rem;
   }
-}
 
-@media (max-width: 62.5rem) {
-  .bgImg {
-    top: -15rem;
-  }
-}
-
-@media (max-width: 56.25rem) {
-  .bgImg {
-    top: -7rem;
+  &--bottom {
     bottom: 0;
   }
 }
-
-// @media (max-width: 87.5rem) {
-//   .text {
-//     max-width: 50%;
-//   }
-// }

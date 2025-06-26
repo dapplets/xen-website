@@ -1,6 +1,12 @@
 import type { Metadata, Viewport } from 'next'
 import './global.scss'
+import '../styles/normalize.css'
 import ClientLayout from './ClientLayout'
+import Image from 'next/image'
+import styles from './Page.module.scss'
+import cn from 'classnames'
+
+import gradientBottom from '../../public/img/gradient-bottom.png'
 
 export const metadata: Metadata = {
   title: 'XEN: your privacy-first AI assistant',
@@ -13,7 +19,7 @@ export const metadata: Metadata = {
     'multichannel AI',
     'productivity tools',
   ],
-
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL!),
   icons: {
     icon: [
       { url: '/favicons/favicon.svg', type: 'image/svg' },
@@ -80,8 +86,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className={cn(styles.bodyBg)}>
+        <Image
+          className={cn(styles.bgImg, styles['bgImg--top'])}
+          src={gradientBottom}
+          alt={'gradient'}
+        />
         <ClientLayout>{children}</ClientLayout>
+        <Image
+          className={cn(styles.bgImg, styles['bgImg--bottom'])}
+          src={gradientBottom}
+          alt={'gradient'}
+        />
       </body>
     </html>
   )
