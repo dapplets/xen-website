@@ -19,8 +19,8 @@ import GitDark from '../public/img/github-dark.svg'
 import DiscordDark from '../public/img/discord.svg'
 import TgDark from '../public/img/tg-dark.svg'
 import MediumDark from '../public/img/medium.svg'
-import XDark from '../public/img/x.svg'
-import FacebookDark from '../public/img/facebook.svg'
+// import XDark from '../public/img/x.svg'
+// import FacebookDark from '../public/img/facebook.svg'
 import EmailDark from '../public/img/email.svg'
 
 // todo: need links
@@ -82,7 +82,6 @@ export const communityItems = [
   },
 ]
 
-// todo: need link
 export const availableisItems = [
   {
     icon: Tg,
@@ -127,7 +126,7 @@ export const contacts = [
   { icon: DiscordDark, id: 'DiscordDark', link: 'https://discord.gg/KBB8AKTd' },
   { icon: TgDark, id: TgDark, link: 't.me/dapplets' },
   { icon: MediumDark, id: 'MediumDark', link: 'https://blog.dapplets.org' },
-  { icon: XDark, id: 'XDark', link: '/' },
+  // { icon: XDark, id: 'XDark', link: '/' },
   // { icon: FacebookDark, id: 'FacebookDark', link: '' },
-  { icon: EmailDark, id: 'EmailDark', link: 'info@dapplets.org' },
+  { icon: EmailDark, id: 'EmailDark', link: 'mailto:contact@dapplets.org' },
 ]

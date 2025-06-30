@@ -1,8 +1,8 @@
 import cn from 'classnames'
 import styles from './Promo.module.scss'
 import { FC } from 'react'
-import { optionsBadge } from '@/constants'
-import Image from 'next/image'
+// import { optionsBadge } from '@/constants'
+// import Image from 'next/image'
 import GithubIcon from '../../../public/img/github-white.svg'
 
 const road = ['local', 'convenient', 'fast']
@@ -45,7 +45,7 @@ const Promo: FC = () => {
             <br /> Integrate it&nbsp;anywhere.
             <br /> Keep your data private.
           </p>
-          <div className={styles.options}>
+          {/* <div className={styles.options}>
             <h2 className={cn(styles.optionsTitle)}>
               three
               <br /> subscription
@@ -64,7 +64,7 @@ const Promo: FC = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
           <p className={styles.label}>*limited-time offer</p>
         </div>
       </div>

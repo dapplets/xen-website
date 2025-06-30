@@ -25,14 +25,16 @@ const Products = () => {
               )}
             </div>
             <p className={styles.text}>{feature.text}</p>
-            <a
-              className={styles.link}
-              href={feature.link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {feature.linkText}
-            </a>
+            {feature.title !== 'Native app' && (
+              <a
+                className={styles.link}
+                href={feature.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {feature.linkText}
+              </a>
+            )}
           </li>
         ))}
       </ul>

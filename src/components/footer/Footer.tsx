@@ -1,6 +1,6 @@
 import cn from 'classnames'
 import styles from './Footer.module.scss'
-import Logo from '../../../public/img/logo-dap.svg'
+import Logo from '../../../public/img/logo.svg'
 import { navHeader } from '@/constants'
 
 const Footer = () => {
@@ -9,9 +9,19 @@ const Footer = () => {
       <Logo className={styles.logo} />
       <div className={styles.bottom}>
         <p className={styles.text}>
-          In&nbsp;enim a&nbsp;massa habitant placerat lectus maecenas auctor
-          vitae. Quisque auctor at&nbsp;et&nbsp;eu&nbsp;vitae tempor
-          et&nbsp;porta.
+          Xen uses Mutable Web technology for web integration. This technology
+          enables website data to&nbsp;be&nbsp;collected and processed
+          by&nbsp;agents, with the results embedded back into the webpage. All
+          of&nbsp;this happens in&nbsp;real time in&nbsp;the user&rsquo;s
+          browser. Visit{' '}
+          <a
+            className={cn(styles.text, styles['text--link'])}
+            target="_blank"
+            href="http://dapplets.org"
+          >
+            http://dapplets.org
+          </a>{' '}
+          for more information.
         </p>
         <nav className={styles.nav}>
           {navHeader.map((nav, i) => (
