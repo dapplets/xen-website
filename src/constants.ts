@@ -124,7 +124,7 @@ export const supported = [
 export const contacts = [
   { icon: GitDark, id: 'GitDark', link: 'https://github.com/dapplets' },
   { icon: DiscordDark, id: 'DiscordDark', link: 'https://discord.gg/KBB8AKTd' },
-  { icon: TgDark, id: TgDark, link: 't.me/dapplets' },
+  { icon: TgDark, id: TgDark, link: 'https://t.me/dapplets' },
   { icon: MediumDark, id: 'MediumDark', link: 'https://blog.dapplets.org' },
   // { icon: XDark, id: 'XDark', link: '/' },
   // { icon: FacebookDark, id: 'FacebookDark', link: '' },

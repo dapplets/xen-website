@@ -65,7 +65,7 @@ const Promo: FC = () => {
               ))}
             </ul>
           </div> */}
-          <p className={styles.label}>*limited-time offer</p>
+          {/* <p className={styles.label}>*limited-time offer</p>     */}
         </div>
       </div>
 
