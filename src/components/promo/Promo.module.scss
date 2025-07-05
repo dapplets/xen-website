@@ -162,11 +162,7 @@
   line-height: 1.49;
   font-weight: 300;
   color: var(--grey-7a);
-
-  &:first-of-type {
-    color: var(--violet-79);
-    font-weight: 600;
-  }
+  transition: color 0.5s ease;
 
   &:nth-of-type(2) {
     position: relative;
@@ -179,15 +175,15 @@
       width: 5rem;
       height: 0.0625rem;
       top: calc(50% + 1px);
+      background-color: currentColor;
+      transition: background-color 0.5s ease;
     }
 
     &::after {
-      background-color: var(--violet-79);
       left: calc(-100% - 0.625rem);
     }
 
     &::before {
-      background-color: var(--grey-7a);
       right: calc(-100% - 0.625rem);
     }
   }

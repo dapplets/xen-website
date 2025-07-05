@@ -5,7 +5,6 @@ import Options from '@/components/options/Options'
 import Community from '@/components/community/Community'
 import Supported from '@/components/supported/Supported'
 import Products from '@/components/products/Products'
-import Contacts from '@/components/contacts/Contacts'
 import cn from 'classnames'
 
 import Circles from '../../public/img/circles.svg'
@@ -25,7 +24,6 @@ export default function Home() {
       </div>
       <div className={cn(styles.bg, styles['bg--color'], styles['bg--bottom'])}>
         <Products />
-        <Contacts />
       </div>
     </main>
   )

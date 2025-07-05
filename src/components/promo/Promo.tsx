@@ -1,13 +1,61 @@
+'use client'
 import cn from 'classnames'
 import styles from './Promo.module.scss'
-import { FC } from 'react'
+import { FC, useEffect, useRef } from 'react'
 // import { optionsBadge } from '@/constants'
 // import Image from 'next/image'
 import GithubIcon from '../../../public/img/github-white.svg'
+import gsap from 'gsap'
 
 const road = ['local', 'convenient', 'fast']
 
 const Promo: FC = () => {
+  const itemsRef = useRef<HTMLLIElement[]>([])
+
+  useEffect(() => {
+    const tl = gsap.timeline({
+      repeat: -1,
+      yoyo: true,
+      repeatDelay: 0.5,
+    })
+
+    tl.to(
+      itemsRef.current,
+      {
+        color: '#7949FF',
+        duration: 1.5,
+        stagger: 0.3,
+        ease: 'power1.inOut',
+      },
+      0
+    )
+
+    const secondItem = itemsRef.current[1]
+    if (secondItem) {
+      tl.to(
+        secondItem,
+        {
+          color: '#7949FF',
+          duration: 1.5,
+          ease: 'power1.inOut',
+        },
+        0
+      )
+    }
+
+    return () => {
+      tl.kill()
+      if (secondItem) {
+        secondItem.classList.remove(styles.active)
+      }
+    }
+  }, [])
+
+  const addToRefs = (el: HTMLLIElement | null, index: number) => {
+    if (el && !itemsRef.current.includes(el)) {
+      itemsRef.current[index] = el
+    }
+  }
   return (
     <section className={cn('max-width', styles.wrapper)}>
       <div className={styles.top}>
@@ -70,8 +118,12 @@ const Promo: FC = () => {
       </div>
 
       <ul className={styles.road}>
-        {road.map((item) => (
-          <li className={styles.roadItem} key={item}>
+        {road.map((item, index) => (
+          <li
+            className={styles.roadItem}
+            key={item}
+            ref={(el) => addToRefs(el, index)}
+          >
             {item}
           </li>
         ))}

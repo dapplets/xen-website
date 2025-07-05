@@ -1,6 +1,6 @@
 import cn from 'classnames'
 import styles from './Header.module.scss'
-import React, { Dispatch, FC, SetStateAction } from 'react'
+import React, { Dispatch, FC, SetStateAction, useEffect, useState } from 'react'
 import LogoIcon from '../../../public/img/logo.svg'
 import Logo from '../../../public/img/logo-icon.svg'
 import { navHeader } from '@/constants'
@@ -19,13 +19,24 @@ const Header: FC<{
   isMenuOpen?: boolean
   setMenuOpen: React.Dispatch<React.SetStateAction<boolean>>
 }) => {
+  const [isNavFixed, setIsNavFixed] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsNavFixed(window.scrollY > 100)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
     <header className={cn('max-width', styles.wrapper)}>
       <Link href="/" className={styles.logoBlock}>
         <Logo /> <LogoIcon className={styles.logo} />
       </Link>
 
-      <nav className={styles.nav}>
+      <nav className={cn(styles.nav, { [styles.navFixed]: isNavFixed })}>
         {navHeader.map((nav, i) => (
           <a
             className={styles.navItem}
