@@ -23,8 +23,7 @@ const Footer = () => {
             target="_blank"
             href="http://dapplets.org"
           >
-            Mutable Web is a customization layer built on top of the existing
-            web
+            mutable web
           </a>{' '}
           for more information.
         </p>

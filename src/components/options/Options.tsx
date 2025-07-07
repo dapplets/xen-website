@@ -6,7 +6,7 @@ const Options = () => {
   return (
     <section className={cn('max-width', styles.wrapper)}>
       <h2 className={cn('title-hilight', styles.title)}>
-        Local-First, Cloud-Optional
+        Local&#8209;First, Cloud&#8209;Optional
       </h2>
       <ul className={styles.list}>
         {optionsPromo.map((feature) => (

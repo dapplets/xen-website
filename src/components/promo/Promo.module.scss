@@ -189,6 +189,20 @@
   }
 }
 
+@media (max-width: 68.75rem) {
+  .roadItem {
+    &:nth-of-type(2) {
+      &::after {
+        left: calc(-100% - 1rem);
+      }
+
+      &::before {
+        right: calc(-100% - 1rem);
+      }
+    }
+  }
+}
+
 @media (max-width: 56.25rem) {
   .options {
     flex-wrap: wrap;
