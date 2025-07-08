@@ -45,3 +45,9 @@
     max-width: none;
   }
 }
+
+@media (max-width: 31.25rem) {
+  .logo {
+    max-width: 90%;
+  }
+}
